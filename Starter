@@ -1,0 +1,32 @@
+
+Windows:
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+venv\Scripts\activate
+
+
+
+Test at YOLOv5 virker
+
+Kør en hurtig test med en forudtrænet model:
+
+python detect.py --source data/images/bus.jpg --weights yolov5s.pt --conf 0.25
+
+
+Hvis alt virker, bliver resultatet gemt i mappen:
+
+runs/detect/exp/
+
+
+Åbn billedet dér — så skulle du gerne se objekter markeret med bokse ✅
+--------------------------------------------------------------------------------------
+
+Mac:
+source venv/bin/activate
+
+
+
+[Navn]: skal være din navn på din pathfinder
+Yolov5 webcam
+cd "C:\Users\[Navn]\Documents\AAU\MED3 project\yolov5"
+venv\Scripts\activate
+python webcam_yolov5.py
